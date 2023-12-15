@@ -241,6 +241,10 @@ input:focus {
     margin: 10px;
 }
 
+.home-image{
+    margin-top: 10px;
+}
+
   .background1{
     width: 100%;
     height: fit-content;
