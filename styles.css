@@ -17,14 +17,18 @@ main {
     align-items: center;
   }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, li, a {
     color: darkslateblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.background1 h1{
+    color: white;
+}
+
 .home-image img{
-    max-width: 300px;
-    border-radius: 20px;
+    /* max-width: 300px; */
+    border-radius: 15px;
     align-self: center;
 }
 
@@ -133,7 +137,8 @@ li {
   }
 
 .nav-button{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: brush-script-std, sans-serif;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +162,10 @@ li {
 }
 
 .logo{
-    padding-left: 15px;
+    padding-left: 20px;
+    font-family: brush-script-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* all LINK states formatting */
@@ -181,26 +189,19 @@ input:focus {
 
 .button{
     position: sticky;
-    background-color: darkslateblue;
-    padding: 5px, 7px;
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 15px, 15px;
     border-radius: 8px;
-    width: 200px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.button a{
-    color: lightblue;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform:none;
 }
 
 .button:hover{
-    width: 210px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
   .home{
@@ -220,33 +221,29 @@ input:focus {
     flex-direction: row;
     justify-content: space-around;  
     gap: 2vw;
-    
+
 }
 
 .home-vert-cont{
-    height: 80%;
-    width: 30vh;
+    height: 100%;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 .home-image .home-image-caption{
-    background: rgba(255, 255, 255, 0.5);
-    height: 50%;
-}
-
-.home-image img{
-    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    margin: 10px;
 }
 
   .background1{
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     background-image: url(images/beach_background.jpg);
     background-size: cover;
     display: flex;
@@ -283,35 +280,47 @@ input:focus {
 }
 
   .home-text{
-    height: 80%;
     width: 100%;
-    padding: 10vw, 5%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0);
     border-radius: 15px;
+  }
+
+  .home-text2{
+    width: 85%;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 2.5%;
   }
 
   .home-text p{
     padding: 15px;
   }
 
-  .testimony-container{
-    width: 90%;
+  .service-container{
+    width: 85%;
     align-self: center;
     /* background: rgba(255, 255, 255, 0.0); */
     height: fit-content;
     display: flex;
     gap: 3%;
-    flex-direction: row;
-    align-content: space-between;
+    flex-direction: column;
+    align-content: center;
     margin-bottom: 50px;
   }
 
-  .testimony-box{
+  .service-box{
     height: fit-content;
+    align-self: center;
     background-color: rgba(173, 216, 230, 0.5);
-    width: 30%;
+    width: 100%;
     padding: 3%;
     border-radius: 15px;
     box-shadow: #aaa;
+    margin-bottom: 3%;
   }
 
+.lobby-pic img{
+    width: 100%;
+    border-radius: 15px;
+}
